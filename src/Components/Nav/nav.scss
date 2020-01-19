@@ -1,0 +1,16 @@
+.b-nav{
+    background: none;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    
+    
+    &__ul{
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+
+    }
+}
