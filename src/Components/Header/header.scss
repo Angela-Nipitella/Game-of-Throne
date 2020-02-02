@@ -1,13 +1,22 @@
 .c-header {
-    // display: flex;
-    // justify-content: space-between;
-    position: fixed;
-    z-index: 100;
-    width: 100%;
-    top: 0;
+    display: flex;
+    justify-content: flex-end;
     left: 0;
+    padding-right: 5em;
+    padding-top: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
     
-    &__ul{
+    &__ul-start{
+        display: flex;
+        justify-content: flex-start;
+        list-style: none;  
+        margin-right: 70%;      
+    }
+
+    &__ul-end{
         display: flex;
         justify-content: flex-end;
         list-style: none;
@@ -19,6 +28,6 @@
     }
 
     &__img-color{
-        fill: white;
+        color: white;
     }
 }

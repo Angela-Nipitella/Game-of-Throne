@@ -1,0 +1,46 @@
+
+.b-gallery{
+    &__item{
+        overflow: hidden;
+        position: relative;
+        height: 210px;
+        margin-bottom: 68px;
+        &:hover {
+            .b-gallery__text{
+                opacity: 1;
+                bottom: 0;
+            }
+        }
+    }
+    &__img{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 100%;
+        transform: translate(-80px, 0);
+    }
+    &__text{
+        opacity: 0;
+        font-size: small;
+        transition: opacity .5s ease-in-out, bottom .25s ease-in-out;;
+        position: absolute;
+        bottom: -30px;
+        width: 100%;
+        text-align: center;
+        height: 20px;
+    }
+}
+
+
+
+.container--margin{
+    background-color: rgb(8, 8, 8);
+    padding-left: 6rem;
+    padding-right: 8rem;
+    padding-top: 6rem;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    padding-right: 3rem;
+}
